@@ -12,7 +12,7 @@ class Formatter {
     let first = Formatter.capitalize(a[0])
     let second = a.slice(1)
     
-    a.map(ele => arr.includes(ele) ? ele : Formatter.capitalize(ele.toLowerCase())).join(' ')
+   return second.conta a.map(ele => arr.includes(ele) ? ele : Formatter.capitalize(ele.toLowerCase())).join(' ')
 }
   
 }
