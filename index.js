@@ -9,7 +9,7 @@ class Formatter {
   static titleize(string){
     let arr = ['the','a', 'an','and','but','of','for','at','by','from']
     let a = string.split(" " )
-    let first = Formatter.capitalize(a[0])
+    let first = Formatter.capitalize(a[0]) + " "
     let second = a.slice(1)
     
    return first.concat(second.map(ele => arr.includes(ele) ? ele : Formatter.capitalize(ele.toLowerCase())).join(' '))
