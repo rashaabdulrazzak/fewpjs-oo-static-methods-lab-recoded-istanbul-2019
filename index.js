@@ -7,8 +7,9 @@ class Formatter {
     return string.replace(/[^A-Za-z0-9-']+/g, '')
   }
   static titleize(string){
-  let a = string.split(" " )
-   return a.map(ele => arr.includes(ele) ? ele : capitalize(ele.toLowerCase())).join(' ')
+    let arr = ['a', 'an','and','but','of','for','at','by','from']
+    let a = string.split(" " )
+    return a.map(ele => arr.includes(ele) ? ele : capitalize(ele.toLowerCase())).join(' ')
 }
   
 }
